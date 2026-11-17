@@ -1,0 +1,3 @@
+.privacy-note { padding: 28px 0 40px; background: var(--brand-paper); }
+.privacy-note p { color: var(--muted); font-size: 13px; line-height: 1.6; }
+.privacy-note a { text-decoration: underline; text-underline-offset: 2px; }
