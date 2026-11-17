@@ -2,7 +2,7 @@
 
 - Landing page independente com a identidade clubedapromo (`logo/clube-da-promo/MARCA.md`): Verde Clube `#12352B`, Lima Oferta `#D7FF3F` e Branco Quente `#F6F7F0`, com Nunito variável e símbolo vetorial de cupom/porcentagem. Mesma base técnica e mesmos links da `lp-achadinhos`; design e chamadas próprios.
 - A página tem hero, barra horizontal de marcas (`brand-strip.tsx`) e carrossel de validações (`proofs.tsx`). O usuário deseja preservar essa estrutura e fazer alterações pontuais de UI; não substitua seções por painéis, grades editoriais ou novas estruturas sem solicitação.
-- A pedido do usuário em 17/11/2026, a arte à direita da hero virou uma simulação animada do grupo (`group-preview.tsx`), com ofertas arquivadas, legenda de simulação e controle de pausa. Os valores da prévia são históricos; não os apresente como ofertas ao vivo.
+- A pedido do usuário em 17/11/2026, a arte à direita da hero virou uma simulação animada do grupo (`group-preview.tsx`), com ofertas arquivadas. O usuário pediu remover a legenda visível e o controle de pausa; a rolagem é automática e respeita a preferência do sistema por movimento reduzido. Os valores da prévia são históricos; não os apresente como ofertas ao vivo. A logo fica junto ao título, centralizando o conjunto da primeira dobra.
 - Textos da hero em `src/content/hero.ts`; links públicos em `src/config/site.ts`; cores em `src/app/globals.css`.
 - O usuário autorizou aplicar clubedapromo nesta LP em 16/11/2026, substituindo a estética Seu Promo. Use a proposta de `logo/clube-da-promo/`; o nome da pasta permanece `lp-rato-v01`. Essa autorização não altera contas, outras LPs ou o destino dos links.
 - Chamadas e títulos não citam preço.

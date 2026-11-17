@@ -1,17 +1,12 @@
-"use client";
-
 import Image from "next/image";
-import { useState } from "react";
 import { ClubSymbol } from "@/components/ui/club-symbol";
 import { siteConfig } from "@/config/site";
 import { groupDemoOffers } from "@/content/group-demo";
 import "./group-preview.css";
 
 export function GroupPreview() {
-  const [paused, setPaused] = useState(false);
-
   return (
-    <div className="group-preview" data-paused={paused}>
+    <div className="group-preview">
       <div className="preview-phone" aria-hidden="true">
         <div className="phone-screen">
           <div className="phone-status">
@@ -68,13 +63,6 @@ export function GroupPreview() {
           </div>
           <div className="phone-home"><span /></div>
         </div>
-      </div>
-      <div className="preview-caption">
-        <p>Simulação com ofertas já compartilhadas.</p>
-        <button className="preview-playback" type="button" onClick={() => setPaused(!paused)} aria-pressed={paused} aria-label={paused ? "Reproduzir prévia do grupo" : "Pausar prévia do grupo"}>
-          {paused ? <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5 3 8 5-8 5Z" fill="currentColor" /></svg> : <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 3h3v10H4zm5 0h3v10H9z" fill="currentColor" /></svg>}
-          {paused ? "Reproduzir" : "Pausar"}
-        </button>
       </div>
       <p className="sr-only">Prévia ilustrativa de um grupo do WhatsApp, com fotos de produtos e mensagens de ofertas arquivadas de novembro de 2026. Os valores exibidos são históricos.</p>
     </div>

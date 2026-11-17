@@ -45,9 +45,9 @@ A prévia de compartilhamento usa `NEXT_PUBLIC_SITE_URL`, quando definido, ou `C
 
 ## Prévia do grupo na hero
 
-`src/components/home/group-preview.tsx` simula uma gravação da conversa do WhatsApp dentro de uma moldura de celular, com barra de status, avatar, nome do grupo, fotos, mensagens de oferta, horários e campo visual de mensagem. O cabeçalho e o rodapé ficam fixos enquanto as mensagens sobem com pausas em um loop de 28 segundos. O botão externo pausa e retoma a prévia; com movimento reduzido, a tela fica estática e o botão é ocultado.
+`src/components/home/group-preview.tsx` simula uma gravação da conversa do WhatsApp dentro de uma moldura de celular, com barra de status, avatar, nome do grupo, fotos, mensagens de oferta, horários e campo visual de mensagem. O cabeçalho e o rodapé ficam fixos enquanto as mensagens sobem continuamente em um loop de 28 segundos, sem controle de pausa ou legenda externa. Com movimento reduzido nas preferências do sistema, a tela fica estática.
 
-As quatro ofertas em `src/content/group-demo.ts` vêm do acervo público da `lp-achadinhos`, de 05 a 09/11/2026: smartwatch, robô aspirador, cadeira gamer e mochila. Fotos e fontes ficam em `public/images/group-demo/`. Valores são históricos, a legenda identifica a simulação e os links desenhados na conversa não são clicáveis. O único convite real continua nos botões do grupo.
+As quatro ofertas em `src/content/group-demo.ts` vêm do acervo público da `lp-achadinhos`, de 05 a 09/11/2026: smartwatch, robô aspirador, cadeira gamer e mochila. Fotos e fontes ficam em `public/images/group-demo/`. Valores são históricos, o marcador interno “Ofertas do acervo” identifica a origem e os links desenhados na conversa não são clicáveis. O único convite real continua nos botões do grupo.
 
 ## Barra de lojas e marcas
 

@@ -10,14 +10,14 @@ export function Hero() {
 
   return (
     <section className="hero" id="inicio" aria-labelledby="hero-title">
-      <div className="hero-brand page-container">
-        <a className="club-brand" href="#inicio" aria-label={`${siteConfig.name} — início`}>
-          <ClubSymbol />
-          <span className="club-brand-name" aria-hidden="true">{siteConfig.name}</span>
-        </a>
-      </div>
       <div className="hero-inner page-container">
         <div className="hero-copy">
+          <div className="hero-brand">
+            <a className="club-brand" href="#inicio" aria-label={`${siteConfig.name} — início`}>
+              <ClubSymbol />
+              <span className="club-brand-name" aria-hidden="true">{siteConfig.name}</span>
+            </a>
+          </div>
           <h1 id="hero-title">
             {title.before}<span className="hero-highlight">{title.highlight}</span>{title.after}
           </h1>

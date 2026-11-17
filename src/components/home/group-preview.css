@@ -17,8 +17,7 @@
 .chat-menu { width: 20px; height: 20px; }
 .chat-feed { position: relative; flex: 1; min-height: 0; overflow: hidden; padding: 32px 11px 0; background: #efeae2 url("/images/group-demo/chat-pattern.svg") repeat; background-size: 220px 220px; }
 .chat-date { position: absolute; z-index: 1; top: 8px; left: 50%; transform: translateX(-50%); padding: 4px 9px; border-radius: 6px; background: #f8f8f1; color: #667781; box-shadow: 0 1px 2px #0000001a; font-size: 9px; white-space: nowrap; }
-.chat-feed-track { animation: chat-feed-scroll 28s cubic-bezier(.3,.1,.25,1) infinite; }
-.group-preview[data-paused="true"] .chat-feed-track { animation-play-state: paused; }
+.chat-feed-track { animation: chat-feed-scroll 28s linear infinite; }
 .chat-message-slot { padding-bottom: 14px; }
 .chat-message { position: relative; display: flex; flex-direction: column; width: 94%; max-width: 244px; padding: 0 0 3px; border-radius: 0 8px 8px; background: #fff; box-shadow: 0 1px 1px #0b141a24; }
 .chat-message::before { content: ""; position: absolute; top: 0; left: -6px; border-top: 7px solid #fff; border-left: 7px solid transparent; }
@@ -42,19 +41,10 @@
 .chat-mic svg { width: 20px; height: 20px; }
 .phone-home { display: flex; flex-shrink: 0; align-items: center; justify-content: center; height: 17px; background: #efeae2; }
 .phone-home > span { width: 92px; height: 3px; border-radius: 99px; background: #273a35; }
-.preview-caption { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 7px 12px; margin-top: 24px; color: var(--muted); }
-.preview-caption > p { font-size: 10px; line-height: 1.4; }
-.preview-playback { display: inline-flex; align-items: center; gap: 4px; min-height: 30px; padding: 4px 8px; border: 1px solid #12352b29; border-radius: 99px; background: transparent; color: var(--brand-green); font-size: 10px; font-weight: 750; }
-.preview-playback:hover { background: #12352b0a; }
-.preview-playback svg { width: 12px; height: 12px; }
 @keyframes chat-feed-scroll {
-  0%, 14% { transform: translateY(0); }
-  18%, 38% { transform: translateY(-12.5%); }
-  42%, 62% { transform: translateY(-25%); }
-  66%, 86% { transform: translateY(-37.5%); }
-  90%, 100% { transform: translateY(-50%); }
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
 }
 @media (prefers-reduced-motion: reduce) {
   .chat-feed-track { animation: none; }
-  .preview-playback { display: none; }
 }
