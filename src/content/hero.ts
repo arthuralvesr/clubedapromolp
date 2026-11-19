@@ -6,5 +6,5 @@ export const heroContent = {
   },
   description:
     "Receba achados e cupons do Mercado Livre e da Shopee em um grupo gratuito. Você escolhe o que interessa e compra direto nas lojas.",
-  cta: "Entrar no grupo gratuito",
+  cta: "Receba promoções e cupons",
 };
