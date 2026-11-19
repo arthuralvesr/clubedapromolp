@@ -1,10 +1,10 @@
 export const heroContent = {
   title: {
-    before: "As ",
-    highlight: "melhores ofertas",
-    after: " da internet, em um só clube.",
+    before: "Ofertas de ",
+    highlight: "lojas conhecidas",
+    after: ", direto no seu WhatsApp.",
   },
   description:
-    "Promoções, bugs e cupons selecionados para você receber no WhatsApp, sem perder horas pesquisando.",
-  cta: "Quero entrar no clube gratuito",
+    "Receba achados e cupons do Mercado Livre e da Shopee em um grupo gratuito. Você escolhe o que interessa e compra direto nas lojas.",
+  cta: "Entrar no grupo gratuito",
 };

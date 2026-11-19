@@ -19,7 +19,7 @@
 .proofs-arrow:disabled { opacity: .45; cursor: default; }
 .proofs .proofs-arrow:focus-visible, .proofs .whatsapp-cta:focus-visible { outline-color: var(--brand-lime); }
 .proofs-cta { display: flex; justify-content: center; margin-top: 44px; }
-.proofs .whatsapp-cta { border-color: var(--brand-lime); box-shadow: 0 5px 0 #d7ff3f40; animation-name: none; }
+.proofs .whatsapp-cta { box-shadow: 0 5px 0 var(--whatsapp-dark); animation-name: none; }
 @media (max-width: 600px) {
   .proofs { padding-block: 12px 64px; }
   .proofs-track { padding-top: 32px; }
